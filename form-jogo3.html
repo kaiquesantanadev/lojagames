@@ -18,6 +18,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
@@ -33,7 +35,7 @@
     <div id="wrapper">
       <!-- Sidebar -->
       <ul
-        class="navbar-nav bg-green sidebar sidebar-dark accordion"
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
         <!-- Sidebar - Brand -->
@@ -58,75 +60,12 @@
           >
         </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider" />
-
-        <!-- Heading -->
-        <div class="sidebar-heading">Interface</div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            data-toggle="collapse"
-            data-target="#collapseTwo"
-            aria-expanded="true"
-            aria-controls="collapseTwo"
-          >
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Components</span>
-          </a>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordionSidebar"
-          >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Components:</h6>
-              <a class="collapse-item" href="buttons.html">Buttons</a>
-              <a class="collapse-item" href="cards.html">Cards</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            data-toggle="collapse"
-            data-target="#collapseUtilities"
-            aria-expanded="true"
-            aria-controls="collapseUtilities"
-          >
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Utilities</span>
-          </a>
-          <div
-            id="collapseUtilities"
-            class="collapse"
-            aria-labelledby="headingUtilities"
-            data-parent="#accordionSidebar"
-          >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Utilities:</h6>
-              <a class="collapse-item" href="utilities-color.html">Colors</a>
-              <a class="collapse-item" href="utilities-border.html">Borders</a>
-              <a class="collapse-item" href="utilities-animation.html"
-                >Animations</a
-              >
-              <a class="collapse-item" href="utilities-other.html">Other</a>
-            </div>
-          </div>
-        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Heading -->
-        <div class="sidebar-heading">Addons</div>
+        <div class="sidebar-heading">Navegação</div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
@@ -148,22 +87,90 @@
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">CRUD:</h6>
+              <h6 class="collapse-header">Cliente</h6>
               <a class="collapse-item" href="login.html">Login</a>
               <a class="collapse-item" href="register.html">Register</a>
+              <h6 class="collapse-header">Produtos</h6>
               <a class="collapse-item" href="cadastrar-produto.html"
                 >Cadastrar produto</a
               >
               <a class="collapse-item" href="atualizar-produto.html"
                 >Atualizar produto</a
               >
+              <h6 class="collapse-header">Categorias</h6>
+              <a class="collapse-item" href="cadastrar-categoria.html"
+              >Cadastrar categorias</a
+            >
+            <a class="collapse-item" href="atualizar-categoria.html"
+            >Atualizar categorias</a
+          >
+              <h6 class="collapse-header">empresas</h6>
+              <a class="collapse-item" href="cadastrar-empresadev.html"
+              >Cadastrar empresas</a
+            >
+            <a class="collapse-item" href="atualizar-empresadev.html"
+            >Atualizar empresas</a
+          >
               <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
+              <h6 class="collapse-header">Outros:</h6>
               <a class="collapse-item" href="404.html">404 Page</a>
               <a class="collapse-item" href="blank.html">Blank Page</a>
             </div>
           </div>
         </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapsePages2"
+            aria-expanded="true"
+            aria-controls="collapsePages"
+          >
+          <i class="fas fa-fw fa-user"></i>  
+            <span>Clientes</span>
+          </a>
+          <div
+            id="collapsePages2"
+            class="collapse"
+            aria-labelledby="headingPages"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Cliente</h6>
+              <a class="collapse-item" href="login.html">Cadastrar cliente</a>
+              <a class="collapse-item" href="lista-cliente.html">Lista clientes</a>
+          </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapsePagesJogos"
+            aria-expanded="true"
+            aria-controls="collapsePages"
+          >
+          <i class="fas fa-fw fa-gamepad"></i>  
+            <span>Jogos</span>
+          </a>
+          <div
+            id="collapsePagesJogos"
+            class="collapse"
+            aria-labelledby="headingPages"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Jogos</h6>
+              <a class="collapse-item" href="form-jogo1.html">Cadastrar jogos</a>
+              <a class="collapse-item" href="lista-jogo.html">Lista de jogos</a>
+          </div>
+          </div>
+        </li>
+
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
@@ -489,7 +496,7 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid">
-            <div class="container">
+            <div>
               <!-- Outer Row -->
               <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-12 col-md-9">
@@ -500,109 +507,78 @@
                         <div class="col-lg-12">
                           <div class="p-5">
                             <div class="text-center">
-                              <h1 class="h4 text-gray-900 mb-4">
+                              <h1 class="h4 text-gray-900 mb-2 fs-2">
                                 Cadastrar jogo:
                               </h1>
                             </div>
-                            <form id="cadastroForm" class="user">
+                            
+                            <form id="cadastroForm3" class="user">
 
-                              <div class="tab form-group">
-                                <h4 class="text-center">Informações descritivas</h4>
-                                <input
-                                  type="text"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="tituloJogo"
-                                  aria-describedby="tituloHelp"
-                                  placeholder="Título do Jogo"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="desenvolvedoraJogo"
-                                  placeholder="Desenvolvedora"
-                                  required
-                                />
-                                <input
-                                  type="number"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="precoJogo"
-                                  placeholder="Preço do jogo"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="textoURL"
-                                  placeholder="URL da imagem do jogo"
-                                  required
-                                />
-                              </div>
-                            
-                              <div class="tab form-group">
-                                <h4 class="text-center">Informações de Jogabilidade</h4>
-                                <select class="form-control rounded-2 my-3" id="modoJogo" required>
-                                  <option value="" disabled selected>Modo de jogo:</option>
-                                  <option value="single-player">Single-player</option>
-                                  <option value="multi-player">Multi-player</option>
-                                  <option value="both">Single-player e multi-player</option>
-                                </select>
-                                <select class="form-control rounded-2 my-3" id="plataformaJogo" required>
-                                  <option value="" disabled selected>Selecione a plataforma:</option>
-                                  <option value="pc">PC</option>
-                                  <option value="playstation">Playstation</option>
-                                  <option value="xbox">X-Box</option>
-                                  <option value="multiplataforma">Multiplataforma</option>
-                                </select>
-                                <select class="form-control rounded-2 my-3" id="crossPlataforma" required>
-                                  <option value="" disabled selected>Suporte Cross-Platform:</option>
-                                  <option value="yes">Sim</option>
-                                  <option value="no">Não</option>
-                                </select>
-                              </div>
-                            
-                              <div class="tab form-group">
-                                <h4 class="text-center">Informações de Adicionais</h4>
-                                <input
-                                  type="text"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="dataLancamentoJogo"
-                                  placeholder="Data de Lançamento"
-                                  onfocus="(this.type='date')" onblur="(this.type='text')"
-                                  required
-                                />
-                                <input
-                                  type="number"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="classificacaoEtariaJogo"
-                                  placeholder="Classificação Etária"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  class="form-control form-control-user rounded-0 my-3"
-                                  id="idiomaJogo"
-                                  placeholder="Idioma do Jogo"
-                                  required
-                                />
-                                <textarea
-                                  class="form-control form-control-user rounded-0"
-                                  id="descricaoJogo"
-                                  placeholder="Descrição do Jogo"
-                                ></textarea>
-                              </div>
+                                <div class="tab form-group">
+                                    <h4 class="text-center">Informações de Adicionais</h4>
+                                    <div class="row mb-3">
+                                      <div class="form-floating mb-3 col-sm-8 mb-3 mb-sm-0">
+                                        <input
+                                          type="date"
+                                          class="form-control form-control-user rounded-0"
+                                          id="dataLancamentoJogo"
+                                          placeholder="Data de Lançamento"
+                                          required
+                                        />
+                                        <label for="dataLancamentoJogo" class="pl-4">Data de lançamento do jogo</label>
+                                      </div>
+                                      <div class="form-floating mb-3 mb-3 col-sm-4 mb-3 mb-sm-0">
+                                        <select class="form-select" id="classificacaoEtariaJogo" required>
+                                          <option value="Livre">Livre</option>
+                                          <option value="10">10</option>
+                                          <option value="12">12</option>
+                                          <option value="14">14</option>
+                                          <option value="16">16</option>
+                                          <option value="18">18</option>
+                                        </select>
+                                        <label for="classificacaoEtariaJogo" class="pl-4">Classificação Etária</label>
+                                      </div>
+                                  </div>
+    
+                                  <div class="row mb-3">
+                                    <div class="form-floating mb-3 col-sm-6 mb-3 mb-sm-0">
+                                      <input
+                                        type="text"
+                                        class="form-control form-control-user rounded-0"
+                                        id="idiomaJogo"
+                                        placeholder="Idioma do Jogo"
+                                        required
+                                      />
+                                      <label for="Idioma do jogo" class="pl-4">Idioma do jogo</label>
+                                    </div>
+                                    
+                                    <div class="form-floating col-sm-6 ">
+                                      <input
+                                        type="text"
+                                        class="form-control form-control-user rounded-0"
+                                        id="fabricanteJogo"
+                                        placeholder="Idioma do Jogo"
+                                        required
+                                      />
+                                      <label for="fabricanteJogo" class="pl-4">Fabricante do jogo</label>
+                                    </div>
+                                  </div>
+    
+                                    <!-- <a href="cadastrar-empresadev.html" class="fs-5">Clique aqui para cadastrar uma empresa</a> -->
+                                  </div>
+                                
                             
                               <div style="overflow:auto;">
                                 <div style="float:right;">
-                                  <button type="button" id="prevBtn" class="btn btn-secondary" onclick="nextPrev(-1)">Anterior</button>
-                                  <button type="button" id="nextBtn" class="btn btn-primary" onclick="nextPrev(1)">Próximo</button>
+                                  <button type="button" id="prevBtn" class="btn btn-secondary"> <a href="form-jogo2.html">Anterior</a></button>
+                                  <button type="submit" id="nextBtn" class="btn btn-success">Enviar</button>
                                 </div>
                               </div>
                             
                               <div style="text-align:center;margin-top:40px;">
                                 <span class="step"></span>
                                 <span class="step"></span>
-                                <span class="step"></span>
+                                <span class="step" style="background-color: #4c5caf;"></span>
                               </div>
                             </form>
                             
@@ -687,6 +663,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="./js/formWizard.js"></script>
+    <script src="./scripts/scriptsJogo/cadastroFormJogo3.js" type="module"></script>
   </body>
 </html>
